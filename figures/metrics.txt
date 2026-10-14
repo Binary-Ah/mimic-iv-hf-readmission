@@ -1,0 +1,7 @@
+readmit_rate: 0.1610
+train_n: 46240
+test_n: 11560
+scale_pos_weight: 5.210
+calibrated_AUROC: 0.5843
+los_MAE: 2.890
+los_R2: 0.504
