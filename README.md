@@ -40,6 +40,15 @@ MIMIC-IV 정형 데이터로 **심부전(HF) 입원 환자의 30일 재입원**�
 ![calibration](figures/calibration_curve.png)
 ![clusters](figures/cluster_pca.png)
 
+## My role
+
+4인 팀 프로젝트에서 이 저장소의 노트북 01~05를 작성했습니다.
+
+- MIMIC-IV 테이블 탐색, I50.x 심부전 코호트 추출과 30일 재입원 라벨 정의
+- 40 GB `chartevents`를 청크 단위로 처리해 입원 첫 24시간 바이탈 피처 생성
+- XGBoost/LightGBM 분류, KMeans 위험군, Ridge 재실기간 회귀
+- 재실기간 회귀의 누수 컬럼(`los_days`, `icu_total_los` 등)을 찾아 제거하고 수치를 다시 산출
+
 ## Files
 
 ```
